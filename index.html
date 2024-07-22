@@ -1,0 +1,64 @@
+3
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form With Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <div class="card">
+      <div class="card1">
+        <form action="" id="myForm">
+          <h1>Register</h1>
+
+          <div class="field">
+            <span class="icon"><i class="ri-user-fill"></i></span>
+            <input type="text" id="name" placeholder="Name" name="name">
+          </div>
+          <!-- <span id="nameError" style="color: red;"></span> -->
+
+          <div class="field">
+            <span class="icon"><i class="ri-mail-fill"></i></span>
+            <input type="email" id="email" placeholder="Email">
+          </div>
+          <!-- <span id="emailError" style="color: red;"></span> -->
+
+          <div class="field">
+            <span class="icon"><i class="ri-phone-fill"></i></span>
+            <input type="tel" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}">
+          </div>
+          <!-- <span id="mobileError" style="color: red;"></span> -->
+
+          <div class="field">
+            <span class="icon"><i class="ri-lock-2-fill"></i></span>
+            <input type="password" id="password" placeholder="Password">
+          </div>
+          <!-- <span id="passwordError" style="color: red;"></span> -->
+
+          <div class="field">
+            <span class="icon"><i class="ri-lock-2-fill"></i></span>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+          </div>
+          <!-- <span id="confirmPasswordError" style="color: red;"></span> -->
+
+          <input type="submit" value="submit" class="btn">
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
